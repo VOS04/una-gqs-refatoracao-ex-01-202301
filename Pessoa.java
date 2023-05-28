@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Pessoa {
-  // public String nome;
+  public String nome; // Declaração da variavel nome comentada
   public int idade;
   public String cartaoVacinaEmDia;
   public String teveSintomasRecentemente;
