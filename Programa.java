@@ -9,15 +9,15 @@ class Programa {
     Validacao validacao = new Validacao();
 
     System.out.println("\tRelatório Auxiliar de Controle de Infecções");
+    // Valdeno, correção do "sc", para "scanner";
+    pessoa.coletaNome(scanner);
+    pessoa.coletaIdade(scanner);
 
-    pessoa.coletaNome(sc);
-    pessoa.coletaIdade(sc);
+    erroTentativas = mensagem.realizaPerguntaVacinaEmDia(pessoa); // Correção de (pessoass) para (pessoa)
 
-    erroTentativas = mensagem.realizaPerguntaVacinaEmDia(pesssoa);
+    validacao.validacaoDasProximasPerguntas(pessoa); // Correção: (pessoas) para (pessoa)
 
-    validacao.validacaoDasProximasPerguntas(pessoas);
-
-    validacao.calcularValidacaoFinal(erroTentativass);
+    validacao.calcularValidacaoFinal(erroTentativas);
 
     // scanner.close();
   }
