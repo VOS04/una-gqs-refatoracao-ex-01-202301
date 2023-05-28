@@ -110,7 +110,7 @@ public class Mensagem {
   }
 
   public void imprimirMensagemErro() {
-    // Corrigido a menssagem de erro
+    // Corrigido a mensagem de erro
     System.out.println(
         "Não foi possível realizar o diagnóstico. Gentileza procurar ajuda médica caso apareça algum sintoma.");
   }
