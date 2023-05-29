@@ -12,8 +12,8 @@ class Programa {
     // Valdeno, correção do "sc", para "scanner";
     pessoa.coletaNome(scanner);
     pessoa.coletaIdade(scanner);
-
-    erroTentativas = mensagem.realizaPerguntaVacinaEmDia(pessoa); // Correção de (pesssoas) para (pessoa)
+    // Adicionado o parametro scannner na linha 16
+    erroTentativas = mensagem.realizaPerguntaVacinaEmDia(pessoa, scanner); // Correção de (pesssoas) para (pessoa)
     // Adicionado os paramentros:mensagem, pessoa, erroTentativas, scanner
     validacao.validacaoDasProximasPerguntas(mensagem, pessoa, erroTentativas, scanner); // Correção: (pessoas) para
                                                                                         // (pessoa)
