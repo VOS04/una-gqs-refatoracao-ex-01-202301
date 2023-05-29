@@ -10,8 +10,8 @@ class Programa {
 
     System.out.println("\tRelatório Auxiliar de Controle de Infecções");
     // Valdeno, correção do "sc", para "scanner";
-    pessoa.coletaNome(scanner);
-    pessoa.coletaIdade(scanner);
+    pessoa.coletaNome(pessoa, scanner); // adicionado o parametro pessoa a linha 13,14
+    pessoa.coletaIdade(pessoa, scanner);
     // Adicionado o parametro scannner na linha 16
     erroTentativas = mensagem.realizaPerguntaVacinaEmDia(pessoa, scanner); // Correção de (pesssoas) para (pessoa)
     // Adicionado os paramentros:mensagem, pessoa, erroTentativas, scanner
