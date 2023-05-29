@@ -17,7 +17,8 @@ class Programa {
 
     validacao.validacaoDasProximasPerguntas(pessoa); // Correção: (pessoas) para (pessoa)
 
-    validacao.calcularValidacaoFinal(erroTentativas);
+    validacao.calcularValidacaoFinal(pessoa, mensagem, erroTentativas);// Adicionado os parametros: pessoa, mensagem,
+                                                                       // erroTentativas
 
     scanner.close(); // Linha comentada, retirado comentario
   }
