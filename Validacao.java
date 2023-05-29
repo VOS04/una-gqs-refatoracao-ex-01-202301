@@ -34,10 +34,10 @@ public class Validacao {
     if (erroTentativas == false) {
       erroTentativas = mensagem.realizaPerguntaTeveContatoPessoasAssintomaticas(pessoa, scanner);
     }
-
+    // Linha da condição abaixo comentada, retirado comentario
     if (erroTentativas == false) {
-      // erroTentativas = mensagem.realizaPerguntaEstaRetornandoViagemExterior(pessoa,
-      // scanner);
+      erroTentativas = mensagem.realizaPerguntaEstaRetornandoViagemExterior(pessoa,
+          scanner);
     }
   }
 }
