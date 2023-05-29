@@ -14,8 +14,9 @@ class Programa {
     pessoa.coletaIdade(scanner);
 
     erroTentativas = mensagem.realizaPerguntaVacinaEmDia(pessoa); // Correção de (pesssoas) para (pessoa)
-
-    validacao.validacaoDasProximasPerguntas(pessoa); // Correção: (pessoas) para (pessoa)
+    // Adicionado os paramentros:mensagem, pessoa, erroTentativas, scanner
+    validacao.validacaoDasProximasPerguntas(mensagem, pessoa, erroTentativas, scanner); // Correção: (pessoas) para
+                                                                                        // (pessoa)
 
     validacao.calcularValidacaoFinal(pessoa, mensagem, erroTentativas);// Adicionado os parametros: pessoa, mensagem,
                                                                        // erroTentativas
