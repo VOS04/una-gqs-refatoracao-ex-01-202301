@@ -21,6 +21,6 @@ class Programa {
     validacao.calcularValidacaoFinal(pessoa, mensagem, erroTentativas);// Adicionado os parametros: pessoa, mensagem,
                                                                        // erroTentativas
 
-    scanner.close(); // Linha comentada, retirado comentario
+    scanner.close(); // Linha comentada, retirado comentario ////////////////
   }
 }
